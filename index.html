@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Horario FAF</title>
+    <link rel="icon" href="https://imgs.search.brave.com/w88p6mZ3SWZi_dBGoCkKRl6pi9OLGiIWGOOOSk2NelM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudG9tYXRpY2tl/dC5lcy9pbWFnZXMv/c3RhdGljLzI2NjA1/Mi1jb25jaWVydG8t/ZGUtam9uaC1wb2xs/b24tZW4tcG9uZmVy/cmFkYS5qcGVnLndl/YnA" type="image/x-icon" />
+    <style>
+    body {
+        background-color:rgb(127, 41, 255);
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        background-color: aliceblue;
+    }
+
+    th {
+        padding: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+        border-bottom: 2px;
+        border-top: 2px;
+        background-color: aqua;
+    }
+
+    thead {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px;
+        background-color: rgb(254, 132, 132);
+    }
+
+    td {
+        padding: 20px;
+        text-align: center;
+        border-top: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        background-color: blanchedalmond;
+    }
+
+    .colorhoras {
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        color: white;
+        background-color: rgb(255, 0, 0);
+    }
+
+
+
+    .MP14 {
+        background-color: blueviolet;
+    }
+
+    .MP07 {
+        background-color: yellow;
+    }
+
+    .MP04 {
+        background-color: orange;
+    }
+
+    .MP06 {
+        background-color: rgb(118, 3, 3);
+        color: white;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .MP12 {
+        background-color: rgb(195, 195, 255);
+    }
+
+    .tablaabajo {
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        background-color: azure;
+    }
+
+    .MP08 {
+        background-color: greenyellow;
+    }
+
+    .MP10 {
+        background-color: white;
+    }
+
+    .bordes {
+        border-top: 2px solid;
+    }
+
+    .bordes1 {
+        border-top: 2px solid;
+        border-left: 2px solid;
+    }
+
+    .bordes2 {
+        border-top: 2px solid; 
+        border-right: 2px solid;
+    }
+
+    .bordes3 {
+        border-bottom: 2px solid aqua;
+    }
+
+    .bordes4 {
+        border-top: 2px solid aqua;
+    }
+
+    li:first-child,
+    li:last-child {
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 2px solid orangered;
+    }
+
+    li:nth-child(even) {
+        background-color: lightyellow;
+    }
+
+    .avatar {
+        padding: 20px;
+        background-color: whitesmoke;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        width: 100px;
+        height: 100px;
+    }
+
+    .tablaalumnos {
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        background-color: azure;
+    }
+
+    </style>
+  </head>
+
+<body>
+        <table>
+            <th>
+                <table>
+                    <caption>
+                        <strong>Horario de clases de 2 SMX A</strong>, hecho por Ángel González Martínez
+                    </caption>
+                    <br>
+                    <thead>
+                    <br>
+                        <tr>
+                            <th class="bordes4"></th>
+                            <th class="bordes4"></th>
+                            <th class="bordes1" colspan="2"></th>
+                            <th class="bordes">Lunes</th>
+                            <th class="bordes">Martes</th>
+                            <th class="bordes">Miércoles</th>
+                            <th class="bordes">Jueves</th>
+                            <th class="bordes2">Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="colorhoras" colspan="2">8:10 / 9:10</th>
+                            <td class="MP14"><strong>MP14</strong></td>
+                            <td class="MP07"><strong>MP07</strong></td>
+                            <td class="MP04"><strong>MP04</strong></td>
+                            <td class="MP07"><strong>MP07</strong></td>
+                            <td class="MP07"><strong>MP07</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="colorhoras" colspan="2">9:10 / 10:10</th>
+                            <td class="MP06" rowspan="2"><strong>MP06</strong></td>
+                            <td class="MP07"><strong>MP07</strong></td>
+                            <td class="MP04"><strong>MP04</strong></td>
+                            <td class="MP04"><strong>MP04</strong></td>
+                            <td class="MP07"><strong>MP07</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="colorhoras" colspan="2">10:10 / 11:10</th>
+                            <td class="MP12"><strong>MP12</strong></td>
+                            <td class="MP06"><strong>MP06</strong></td>
+                            <td class="MP04"><strong>MP04</strong></td>
+                            <td class="MP10"><strong>MP10</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="colorhoras" colspan="2">11:10 / 11:40</th>
+                            <th>P</th>
+                            <th>A</th>
+                            <th>T</th>
+                            <th>I</th>
+                            <th class="bordes2">O</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="colorhoras" colspan="2">11:40 / 12:40</th>
+                            <td class="MP12"><strong>MP12</strong></td>
+                            <td class="MP08"><strong>MP08</strong></td>
+                            <td class="MP12"><strong>MP12</strong></td>
+                            <td class="MP12"><strong>MP12</strong></td>
+                            <td class="MP12"><strong>MP12</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="colorhoras" colspan="2">12:40 / 13:40</th>
+                            <td class="MP12"><strong>MP12</strong></td>
+                            <td class="MP08"><strong>MP08</strong></td>
+                            <td class="MP12"><strong>MP12</strong></td>
+                            <td class="MP10"><strong>MP10</strong></td>
+                            <td class="MP12"><strong>MP12</strong></td>
+                        </tr>
+                        <tr>
+                            <th class="bordes3"></th>
+                            <th class="bordes3"></th>
+                            <th class="colorhoras" colspan="2">13:40 / 14:40</th>
+                            <td><strong>Tutoría</strong></td>
+                            <td class="MP08"><strong>MP08</strong></td>
+                            <th class="bordes3"></th>
+                            <td class="MP12"><strong>MP12</strong></td>
+                            <td class="MP14"><strong>MP14</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="tablaabajo"><strong>Módulos Profesionales</strong></th>
+                            <th class="bordes4"></th>
+                            <th class="tablaabajo"><strong>Profesorado</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>        
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <td class="MP04"><strong>MP04</strong> Sistemas Operativos en Red</td>
+                            <th></th>
+                            <td>José Camúñez</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <td class="MP06"><strong>MP06</strong> Seguridad Informática</td>
+                            <th></th>
+                            <td>Jordi Farrero (y Víctor González)</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <td class="MP07"><strong>MP07</strong> Servicios en Red</td>
+                            <th></th>
+                            <td>Víctor Carceler</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <td class="MP08"><strong>MP08</strong> Aplicaciones Web</td>
+                            <th></th>
+                            <td>David Rodríguez</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <td class="MP10"><strong>MP10</strong> Empresa e Iniciativa Emprendedora</td>
+                            <th></th>
+                            <td>Sònia Martínez</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <td class="MP12"><strong>MP12</strong> Crédito de Síntesis</td>
+                            <th></th>
+                            <td>Jordi Farrero. Federico Jerez, Sònia Martínez</td>
+                        </tr>
+                        <tr>
+                            <th class="bordes3" colspan="2"></th>
+                            <th class="bordes3" colspan="2"></th>
+                            <th class="bordes3" colspan="2"></th>
+                            <td class="MP14"><strong>MP14</strong> Inglés</td>
+                            <th class="bordes3"></th>
+                            <td>Natàlia López</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+                <p><strong>INICIO TABLA DE ALUMNOS</strong></p>
+                <ul>
+                    <li>Esta tabla contiene sus nombres y un ícono</li>
+                    <li>También contiene sus correos</li>
+                    <li>Y hasta su enlace a Github</li>
+                </ul>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th colspan="2"></th>
+                            <th class="tablaalumnos"><strong>Nombre</strong></th>
+                            <th class="tablaalumnos"><strong>Correo</strong></th>
+                            <th class="tablaalumnos"><strong>Github</strong></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/91731830?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">David Rodríguez Pellicer</th>
+                            <th class="tablaalumnos">david@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/davidelpuig">https://github.com/davidelpuig</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/146839409?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Cristian Cano Andrade</th>
+                            <th class="tablaalumnos">ccano@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/ccano1992">https://github.com/ccano1992</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/147502852?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Wenjing Chen</th>
+                            <th class="tablaalumnos">wchen@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/WeJ-Ch">https://github.com/WeJ-Ch</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/147503159?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Jiayi Chen</th>
+                            <th class="tablaalumnos">jiayichen@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/Xuan-Jchen">https://github.com/Xuan-Jchen</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/147502081?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Carlos Arroyo</th>
+                            <th class="tablaalumnos">carroyo@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/arrroyoo">https://github.com/arrroyoo</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/147502148?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Ángel González</th>
+                            <th class="tablaalumnos">angelgonzalez@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/Angelillo4">https://github.com/Angelillo4</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/147502500?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Justin Álvarez</th>
+                            <th class="tablaalumnos">jalvarez@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/justinalvarezmarin">https://github.com/justinalvarezmarin</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/147502628?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Pau Ojeda Gallego</th>
+                            <th class="tablaalumnos">pojeda@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/holasoypauojedagallego">https://github.com/holasoypauojedagallego</p></th>
+                        </tr>
+                        <tr>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2"></th>
+                            <th class="bordes4" colspan="2">
+                                <img class="avatar" src="https://avatars.githubusercontent.com/u/147502245?v=4"/>
+                            </th>
+                            <th class="tablaalumnos">Albert Rodriguez Alvarez</th>
+                            <th class="tablaalumnos">albertrodriguez@elpuig.xeill.net</th>
+                            <th class="tablaalumnos"><p><a href="https://github.com/RebiKk99">https://github.com/RebiKk99</p></th>
+                        </tr>
+                    </thead>
+                </table>
+            </th>
+        </table>  
+</body>
